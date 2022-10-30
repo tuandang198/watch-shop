@@ -1,6 +1,5 @@
 package com.example.wathchshopapi.Model.Product.response;
 
-import com.example.wathchshopapi.Model.Base.response.BaseWatchShopResponse;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
@@ -22,24 +21,33 @@ public class ProductResponseDto implements Serializable {
     @Column(name = "NAME")
     private String name;
 
-    @Column
+    @Column(name = "FK_BRAND")
     private Integer fkBrand;
 
-    @Column
+    @Column(name = "FK_GENDER")
     private Integer fkGender;
 
-    @Column
+//    @Column(name = "BRAND_TEXT")
+//    private Integer brandText;
+//
+//    @Column(name = "GENDER_TEXT")
+//    private Integer genderText;
+
+    @Column(name = "COUNTRY")
     private String country;
 
-    @Column
+    @Column(name = "FK_COLOR")
     private Integer fkColor;
 
-    @Column
+//    @Column(name = "COLOR_TEXT")
+//    private Integer colorText;
+
+    @Column(name = "IMAGE_LINK")
     private String imageLink;
 
-    @Column
+    @Column(name = "QUANTITY")
     private Integer quantity;
 
-    @Column
+    @Column(name = "PRICE")
     private Long price;
 }
