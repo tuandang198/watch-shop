@@ -10,18 +10,18 @@ import java.util.Date;
 @Data
 @Table
 public class BaseWatchShopResponse implements Serializable {
-    @Column
+    @Column(name = "CREATED_USER")
     private String createdUser;
 
-    @Column
+    @Column(name = "CREATED_TIME")
     private Date createdTime;
 
-    @Column
+    @Column(name = "UPDATED_USER")
     private String updatedUser;
 
-    @Column
+    @Column(name = "UPDATED_TIME")
     private Date updatedTime;
 
-    @Column
+    @Column(name = "IS_DELETED")
     private Integer isDeleted;
 }
