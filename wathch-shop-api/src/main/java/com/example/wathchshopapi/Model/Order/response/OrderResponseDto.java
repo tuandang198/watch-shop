@@ -3,10 +3,7 @@ package com.example.wathchshopapi.Model.Order.response;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.List;
 
 @Data
@@ -36,5 +33,6 @@ public class OrderResponseDto {
     @Column(name = "TOTAL_PRICE")
     private Long totalPrice;
 
+    @Transient
     private List<OrderDetailResponseDto> orderDetailResponseDtos;
 }
